@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>YelanMain</title>
+    <meta name="keywords" content="Игры, информация по игре, мейнер Е Лань, билды, играй как хочешь, донат, примогемы, крутки, пожервавания для автора"/>
+    <link rel="stylesheet"  href="styles/style.css">
+    <link rel="stylesheet"  href="styles/award.css">
+</head>
+<body>
+<header>
+    <nav class = "header-nav">
+        <div class="inside-nav-flex">
+            <ul class = "main-nav">
+                <li><a href="index.html"><img id="logo" src="images/logo_00001.svg" alt=""></a></li>
+                <li id="nav-item=1">
+                    <a href="#">Новости</a>
+                </li>
+                <li id="nav-item=2">
+                    <a href="#">Актуальная информация</a>
+                </li>
+                <li id="nav-item=3">
+                    <a href="upcoming_events.html">Предстоящие события</a>
+                </li>
+                <li id="nav-item=4">
+                    <a href="#">Воспоминания</a>
+                </li>
+                <li>
+                    <a href="#w2">Войти</a>
+                </li>
+                <li>
+                    <a href="#w1">Регистрация</a>
+                </li>
+                <div class="modal" id="w2">
+                    <div class="box-modal">
+                        <a href="#0" class="close"></a>
+                        <ul class="switcher">
+                            <li class="switcher-login">
+                                <a href="#w2">Войти</a>
+                            </li>
+                            <li class="switcher-signin">
+                                <a href="#w1"> Регистрация</a>
+                            </li>
+                        </ul>
+                        <form class="form" action="index.html" method="GET">
+                            <fieldset>
+                                <legend class ="form-legend">
+                                    Войти
+                                </legend>
+                                <label for="a1">
+                                    <input class="input" type="text" name="g1" id="a1" placeholder="Имя-пользователя" autofocus>
+                                </label>
+                                <br>
+                                <label for="a2">
+                                    <input class="input" type="text" name="g1" id="a2" placeholder="Пароль" required>
+                                </label>
+                                <br>
+                            </fieldset>
+                            <input class="input" type="submit" value="Войти">
+                        </form>
+                    </div>
+                </div>
+                <div class="modal" id="w1">
+                    <div class="box-modal">
+                        <a href="#0" class="close"></a>
+                        <ul class="switcher">
+                            <li class="switcher-login">
+                                <a href="#w2">Войти</a>
+                            </li>
+                            <li class="switcher-signin">
+                                <a href="#w1"> Регистрация</a>
+                            </li>
+                        </ul>
+                        <form class="form" action="index.html" method="GET">
+                            <fieldset>
+                                <legend class ="form-legend">
+                                    Регистрация
+                                </legend>
+                                <label  for="mail">
+                                    <input class="input" type="text" name="g1" id="mail" placeholder="mail" autofocus>
+                                </label>
+                                <label for="a3">
+                                    <input class="input" type="text" name="g1" id="a3" placeholder="Имя-пользователя" autofocus>
+                                </label>
+                                <br>
+                                <label for="a4">
+                                    <input class="input" type="text" name="g1" id="a4" placeholder="Пароль" required>
+                                </label>
+                                <br>
+                            </fieldset>
+                            <input class="input" type="submit" value="Зарегестрироваться">
+                        </form>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="wrapper" id="page">
+        <article class="article-main">
+            <section id="banners-card" class = "section-main">
+                <div class="card">
+                    <h3 class="teg-style" style="text-align: center;">Отметки</h3>
+                    
+                    <div class="awards" id="awards-container">
+
+                    </div>
+                </div>
+            </section>
+            
+        </article>
+    </div>
+</main>
+<footer>
+    <nav class = "footer-nav">
+        <section>
+            <p>Yelan 2023</p>
+        </section>
+        <div class="inside-nav-flex">
+            <ul class = "main-nav">
+                <li>
+                    <a href="#">Вконтакте</a>
+                </li>
+                <li>
+                    <a href="#">Телеграм</a>
+                </li>
+                <li>
+                    <a href="#">Discord</a>
+                </li>
+                <li>
+                    <a href="#">mail</a>
+                </li>
+                <li>
+                    <a href="#">Ютуб</a>
+                </li>
+            </ul>
+        </div>
+        <section id="site-rule">
+            <p>Все права на продукт сохраняются у создателя сайта 2023</p>
+        </section>
+    </nav>
+</footer>
+<script src="js/awards.js"></script>
+<script src="js/router.js"></script>
+</body>
+</html>

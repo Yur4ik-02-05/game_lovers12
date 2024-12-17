@@ -1,0 +1,39 @@
+/* Слайдер: */
+
+#News-in-game{
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    justify-content: center;
+    grid-template-areas:
+    "H H H H H"
+    "L S S S R";
+    align-items: center;
+}
+#Annoucment{
+    grid-area: H;
+}
+.next-button{
+    grid-area: L;
+}
+.prev-button{
+    grid-area: R;
+}
+.slider{
+    grid-area: S;
+}
+.prev-button{
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+
+}
+.next-button{
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+}
+.slider img{
+    width: 100%;
+}
+ 

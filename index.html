@@ -6,13 +6,14 @@
     <title>YelanMain</title>
     <meta name="keywords" content="Игры, информация по игре, мейнер Е Лань, билды, играй как хочешь, донат, примогемы, крутки, пожертвования для автора"/>
     <link rel="stylesheet"  href="styles/style.css">
+    <link rel="stylesheet"  href="styles/slider.css">
 </head>
 <body>
 <header>
     <nav class="header-nav">
         <div class="inside-nav-flex">
             <ul class="main-nav">
-                <li> <a href="#"><img id="logo" src="images/logo_00001.svg" alt=""></a>  
+                <li> <a href="awards.html"><img id="logo" src="images/logo_00001.svg" alt=""></a>  
                 </li>
                 <li id="nav-item=1">
                     <a href="#">Новости</a>
@@ -21,7 +22,7 @@
                     <a href="#">Актуальная информация</a>
                 </li>
                 <li id="nav-item=3">
-                   <a href="#">Предстоящие события</a> 
+                   <a href="upcoming_events.html">Предстоящие события</a> 
                 </li>
                 <li id="nav-item=4">
                     <a href="#">Воспоминания</a>
@@ -81,92 +82,118 @@
 </header>
 <main>
     <div class="wrapper" id="page">
-        <div class="wrapper" id="page">
-            <article class="article-main">
-                <section class = "section-main" id="Intro">
-                    <h1 class="teg-style">В данном сайте рассмотрены новости игры геншин импакт</h1>
-                    <p>
-                        Добро пожаловать в Yelan! Мы - сообщество Genshin Impact, занимающееся репостингом новостей по игре.
-                        Мы являемся независимыми членами игры и играем в него как хотим.
-                        руководствам по персонажам и многому другому!
-                    </p>
-                </section>
-                <section class = "section-main" id="Links">
-                    <h2 class="teg-style">Links</h2>
-                    <ul class="section-spisok">
-                        <li>
-                            <a href="#">Подсчет молитв</a>
+        <article class="article-main">
+            <section class = "section-main" id="Intro">
+                <h1 class="teg-style">В данном сайте рассмотрены новости игры геншин импакт</h1>
+                <p>
+                    Добро пожаловать в Yelan! Мы - сообщество Genshin Impact, занимающееся репостингом новостей по игре.
+                    Мы являемся независимыми членами игры и играем в него как хотим.
+                    руководствам по персонажам и многому другому!
+                </p>
+            </section>
+            <section class = "section-main" id="Links">
+                <h2 class="teg-style">Links</h2>
+                <ul class="section-spisok">
+                    <li>
+                        <a href="#">Подсчет молитв</a>
+                    </li>
+                    <li>
+                        <a href="#">Наш проект</a>
+                    </li>
+                    <li>
+                        <a href="#">Пожертвовать</a>
+                    </li>
+                    <li>
+                        <a href="#">Другие сайты</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="banners-card" class = "section-main">
+                <div class="card">
+                    <h3 class="teg-style">Текущие банеры</h3>
+                    <div class="card_baners" id="game-banners">
+                        <img src="images/Wriothesley_Banner.png" alt="">
+                        <img src="images/Venti_Banner.png" alt="">
+                        <img src="images/4.1_Weapon_Banner.png" alt="">
+                    </div>
+                    <h4 class="teg-style">Персонажи в банере</h4>
+                    <div class="card_charters" id="charters-in-banner">
+                        <img src="images/UI_AvatarIcon_Venti.png" alt="">
+                        <img src="images/UI_AvatarIcon_Wriothesley.png" alt="">
+                        <img src="images/Character_Dori_Thumb.png" alt="">
+                        <img src="images/UI_AvatarIcon_Chongyun.png" alt="">
+                        <img src="images/Character_Thoma_Thumb-min.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class = "section-main" id="News-in-game">
+                <h5 class="teg-style" id="Annoucment">Новости по игре</h5>
+                <button type="submit" class="prev-button">&gt;</button>
+                <div class = "slider">
+
+                </div>
+                <button type="submit" class="next-button">&lt;</button>
+            </section>
+            <section class = "section-main Help-infor" id="Tools">
+                <h6 class="teg-style">Инструменты</h6>
+                <p> Иструменты которые помогут путещественнику</p>
+                <div class = "Tools">
+                    <ul>
+                        <li id="tools-item1" class="tools-items">
+                            <img src="images/47a1d15958531397e733abcbfceaad35_1250354074216960329.png" alt="">
+                            <a href="#">Боевые заслуги</a>
                         </li>
-                        <li>
-                            <a href="#">Наш проект</a>
+                        <li id="tools-item2" class="tools-items">
+                            <img src="images/calculator.png" alt="">
+                            <a href="#">Калькулятор</a>
                         </li>
-                        <li>
-                            <a href="#">Пожертвовать</a>
+                        <li id="tools-item3" class="tools-items">
+                            <img src="images/ff1419346528dfd64d77c35701ecd106_7596171599082743274.png" alt="">
+                            <a href="#">Заметки</a>
                         </li>
-                        <li>
-                            <a href="#">Другие сайты</a>
+                        <li id="tools-item4" class="tools-items">
+                            <img src="images/f474ba482f38a2f2420dc31c1876d155_6640492607556311675.png" alt="">
+                            <a href="#">Интерактивная карта</a>
+                        </li>
+                        <li id="tools-item5" class="tools-items">
+                            <img src="images/wiki.png" alt="">
+                            <a href="#">Wiki</a>
+                        </li>
+                        <li id="mark" class="tools-items">
+                            <img src="images/загрузка.png" alt="">
+                            <a href="awards.html">Отметки</a>
                         </li>
                     </ul>
-                </section>
-                <section id="banners-card" class = "section-main">
-                    <div class="card">
-                        <h3 class="teg-style">Текущие банеры</h3>
-                        <div class="card_baners" id="game-banners">
-                            <img src="images/Wriothesley_Banner.png" alt="">
-                            <img src="images/Venti_Banner.png" alt="">
-                            <img src="images/4.1_Weapon_Banner.png" alt="">
-                        </div>
-                        <h4 class="teg-style">Персонажи в банере</h4>
-                        <div class="card_charters" id="charters-in-banner">
-                            <img src="images/UI_AvatarIcon_Venti.png" alt="">
-                            <img src="images/UI_AvatarIcon_Wriothesley.png" alt="">
-                            <img src="images/Character_Dori_Thumb.png" alt="">
-                            <img src="images/UI_AvatarIcon_Chongyun.png" alt="">
-                            <img src="images/Character_Thoma_Thumb-min.png" alt="">
-                        </div>
-                    </div>
-                </section>
-                <section class = "section-main" id="News-in-game">
-                    <h5 class="teg-style" id="Annoucment">Новости по игре</h5>
-                    <button type="submit" class="prev-button">&gt;</button>
-                    <div class = "slider">
-    
-                    </div>
-                    <button type="submit" class="next-button">&lt;</button>
-                </section>
-                <section class = "section-main Help-infor" id="Tools">
-                    <h6 class="teg-style">Инструменты</h6>
-                    <p> Иструменты которые помогут путещественнику</p>
-                    <div class = "Tools">
-                        <ul>
-                            <li id="tools-item1" class="tools-items">
-                                <img src="images/47a1d15958531397e733abcbfceaad35_1250354074216960329.png" alt="">
-                                <a href="#">Боевые заслуги</a>
-                            </li>
-                            <li id="tools-item2" class="tools-items">
-                                <img src="images/calculator.png" alt="">
-                                <a href="#">Калькулятор</a>
-                            </li>
-                            <li id="tools-item3" class="tools-items">
-                                <img src="images/ff1419346528dfd64d77c35701ecd106_7596171599082743274.png" alt="">
-                                <a href="#">Заметки</a>
-                            </li>
-                            <li id="tools-item4" class="tools-items">
-                                <img src="images/f474ba482f38a2f2420dc31c1876d155_6640492607556311675.png" alt="">
-                                <a href="#">Интерактивная карта</a>
-                            </li>
-                            <li id="tools-item5" class="tools-items">
-                                <img src="images/wiki.png" alt="">
-                                <a href="#">Wiki</a>
-                            </li>
-                            <li id="mark" class="tools-items">
-                                <img src="images/загрузка.png" alt="">
-                                <a href="awards.html">Отметки</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>           
-        </article>
+                </div>
+            </section>
+        <section class=" section-main Help-infor" id="Div">
+            <h6 class="teg-style">Комментарии</h6>
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Комментарии</title>
+                    <style>
+                        h1 {
+                            color: white;
+                        }
+                    </style>
+                </head>
+                <body>
+                  <h1>Оставте свой комментарий</h1>
+                  <div id="comments"></div>
+                  <form id="commentForm">
+                    <input type="text" id="userName" placeholder="Ваше имя">
+                    <input type="text" id="commentInput" placeholder="Введите комментарий">
+                    <button type="submit">Добавить</button>
+                  </form>
+                
+                  <script src="script.js"></script>
+                </body>
+                </html>
+        </section>
+    </article>
     </div>
 </main>
 <footer>
@@ -199,5 +226,6 @@
     </nav>
 </footer>
 <script src="js/slider.js"></script>
+<script src="js/router.js"></script>
 </body>
 </html>

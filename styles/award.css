@@ -1,0 +1,129 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*#awards-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: .36rem;
+    flex-wrap: wrap;
+    padding-left: 110px;
+}*/
+#awards-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    justify-content: center;
+    grid-template-areas:
+    "D1  D2  D3  D4  D5"
+    "D6  D7  D8  D9  D10"
+    "D11 D12 D13 D14 D15"
+    "D16 D17 D18 D19 D20"
+    "D21 D22 D23 D24 D25"
+    "D26 D27 D28 D29 D30";
+    align-items: center;
+}
+.-award_element {
+    display: flex;
+    margin: 0 25px 20px 0;
+    background-color: rgb(104, 82, 82);
+    border-radius: 10px;
+    border: 4px solid #180a20;
+    align-items: center;
+    flex-direction: column;
+}
+.-image_award{
+    left: 50%;
+    width: 35%;
+    height: 35%;
+}
+
+.-image_award-container{
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+}
+.-items-count{
+    color: #fff;
+    text-align: center;
+    color: #fffdf0;
+}
+.-items-day{
+    color: #fff;
+    text-align: center;
+    color: #fffdf0;
+}
+.-mark_set{
+    position: absolute;
+    background: url("../images/marker.png") no-repeat 50% / cover;
+    width: 100px;
+    height: 100px;
+    
+}
+
+@media (max-width: 1500px) {
+    #awards-container{
+        grid-template-areas:
+        "D1  D2  D3  D4"
+        "D5  D6  D7  D8"
+        "D9  D10 D11 D12"
+        "D13 D14 D15 D16"
+        "D17 D18 D19 D20"
+        "D21 D22 D23 D24"
+        "D25 D26 D27 D28"
+        "D29 D30 E   E  " ;
+    }
+}
+
+@media (max-width: 1000px) {
+    #awards-container{
+        grid-template-areas:
+        "D1  D2  D3"
+        "D4  D5  D6"
+        "D7  D8  D9"
+        "D10 D11 D12"
+        "D13 D14 D15"
+        "D16 D17 D18"
+        "D19 D20 D21"
+        "D22 D23 D24"
+        "D25 D26 D27"
+        "D28 D29 D30";
+    }
+}
+
+@media (max-width: 700px) {
+    #awards-container{
+        grid-template-areas:
+        "D1  D2"
+        "D3  D4"
+        "D5  D6"
+        "D7  D8"
+        "D9  D10"
+        "D11  D12"
+        "D13  D14"
+        "D15  D16"
+        "D17  D18"
+        "D19  D20"
+        "D21  D22"
+        "D23  D24"
+        "D25  D26"
+        "D27  D28"
+        "D29  D30";
+    }
+    .-mark_set{
+        width: 90px;
+        height: 90px;
+        
+    }
+}
