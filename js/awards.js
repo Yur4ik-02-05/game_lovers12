@@ -15,35 +15,6 @@ function awards(){
         3 : 10
     };
     
-    for (let i = 1; i <= 30; i++){
-        img = document.createElement("img");
-        img.src = src[i % 4];
-        img.alt = "icon";
-        img.className = "-image_award"
-
-        div_elem = document.createElement('div');
-        div_elem.className = "-award_element";
-        div_elem.id = "day-"+i;
-        div_elem.style["grid-area"] = "D" + i;
-        img_component = document.createElement('div');
-        img_component.className = "-image_award-container";
-
-        count_award = document.createElement('div');
-        count_award.className = "-items-count";
-        count_award.append("x"+count[i%4]);
-
-        day = document.createElement('div');
-        day.className = "-items-day";
-        day.append("День" + i);
-
-        img_component.append(img);
-        div_elem.append(img_component);
-        div_elem.append(count_award);
-        div_elem.append(day);
-        block.append(div_elem);
-        
-        
-    }
 }
 awards();
 

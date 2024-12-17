@@ -340,3 +340,90 @@ footer {
 header{
     width: 100%;
 }
+
+@media (max-width: 836px) {
+    .wrapper .article-main{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        grid-template-areas:
+        "header"
+        "A"
+        "L"
+        "B"
+        "T"
+        "C"
+        "D"
+        "footer"
+    ;
+    }
+    header{
+        grid-area: header;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .wrapper .article-main .section-main .card .card_baners img {
+        width: auto;
+        height: 110px;
+    }
+    .card_baners-list .teg-style{
+        max-width: 220px;
+        width: auto;
+    }
+    .box-modal .switcher{
+        grid-template-areas: "a" "b"
+    ;
+        justify-content: center;
+    }
+    .switcher-login{
+        grid-area: a
+    }
+    .switcher-signin{
+        grid-area: b;
+    }
+    .box-modal {
+        width: 300px;
+        height: 500px;
+    }
+    .box-modal form{
+        align-items: center;
+    }
+    .box-modal form .input{
+        font-size: 15px;
+        padding-left: 9px;
+        width: 280px;
+    }
+   
+}
+@media (max-width: 376px) {
+    .close:before {
+        right: 0;
+    }
+}
+@media (max-width: 310px) {
+    .box-modal form .input{
+        width: 200px;
+    }
+    .box-modal {
+        width: 260px;
+        height: 420px;
+    }
+    .card_baners-list .teg-style{
+        max-width: 200px;
+        width: auto;
+    }
+    #comments-section {
+        margin-top: 20px;
+    }
+    
+    #comment-form {
+        margin-bottom: 20px;
+    }
+    
+    #comments-list {
+        margin-top: 20px;
+    }
+    
+}
