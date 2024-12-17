@@ -6,17 +6,13 @@
     <title>YelanMain</title>
     <meta name="keywords" content="Игры, информация по игре, мейнер Е Лань, билды, играй как хочешь, донат, примогемы, крутки, пожертвования для автора"/>
     <link rel="stylesheet"  href="styles/style.css">
-
 </head>
 <body>
 <header>
     <nav class="header-nav">
         <div class="inside-nav-flex">
             <ul class="main-nav">
-                <li> 
-                    <a href="index.html">
-                        LOgo
-                    </a>  
+                <li> <a href="#">Logo</a>  
                 </li>
                 <li id="nav-item=1">
                     <a href="#">Новости</a>
@@ -31,11 +27,54 @@
                     <a href="#">Воспоминания</a>
                 </li>
                 <li>
-                    <a href="#">Войти</a>
+                    <a href="#login-modal">Войти</a>
                 </li>
                 <li>
-                    <a href="#">Регистрация</a>
+                    <a href="#register-modal">Регистрация</a>
                 </li>
+                
+                <div class="modal" id="login-modal">
+                    <div class="box-modal">
+                        <a href="#0" class="close"></a>
+                        <h2 class="form-legend"><center>Войти</center></h2>
+                        <form class="form" action="index.html" method="GET">
+                            <fieldset>
+                                <label for="login-username">
+                                    <input class="input" type="text" name="login_username" id="login-username" placeholder="Имя пользователя" autofocus>
+                                </label>
+                                <br>
+                                <label for="login-password">
+                                    <input class="input" type="password" name="login_password" id="login-password" placeholder="Пароль" required>
+                                </label>
+                                <br>
+                            </fieldset>
+                            <input class="input" type="submit" value="Войти">
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="modal" id="register-modal">
+                    <div class="box-modal">
+                        <a href="#0" class="close"></a>
+                        <h2 class="form-legend"><center>Регистрация</center></h2>
+                        <form class="form" action="index.html" method="GET">
+                            <fieldset>
+                                <label for="register-email">
+                                    <input class="input" type="email" name="register_email" id="register-email" placeholder="Email" autofocus>
+                                </label>
+                                <label for="register-username">
+                                    <input class="input" type="text" name="register_username" id="register-username" placeholder="Имя пользователя">
+                                </label>
+                                <br>
+                                <label for="register-password">
+                                     <input class="input" type="password" name="register_password" id="register-password" placeholder="Пароль" required>
+                                 </label>
+                                <br>
+                            </fieldset>
+                            <input class="input" type="submit" value="Зарегистрироваться">
+                        </form>
+                    </div>
+                </div>
             </ul>
         </div>
     </nav>
@@ -66,12 +105,27 @@
     </div>
 </main>
 <footer>
-    <nav class = "footer">
+    <nav class = "footer-nav">
         <section>
             <p>Yelan 2024</p>
         </section>
         <div class="inside-nav-flex">
             <ul class = "main-nav">
+                <li>
+                    <a href="#">Вконтакте</a>
+                </li>
+                <li>
+                    <a href="#">Телеграм</a>
+                </li>
+                <li>
+                    <a href="#">Discord</a>
+                </li>
+                <li>
+                    <a href="#">mail</a>
+                </li>
+                <li>
+                    <a href="#">Ютуб</a>
+                </li>
             </ul>
         </div>
         <section id="site-rule">
