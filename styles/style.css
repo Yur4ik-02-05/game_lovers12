@@ -15,6 +15,9 @@ footer{
     border-top-right-radius: 30px;
 }
 
+.modal{
+    color: #ffff;
+}
 
 li{
     list-style: none;
@@ -61,8 +64,155 @@ li{
     margin-left: auto;
     margin-right: auto;
 }
-footer {
+.wrapper .article-main .section-main .card .card_baners img{
+    width: 424px;
+    height: 238px;
+}
+.wrapper .article-main .section-main .card .card_charters img{
+    width: 100px;
+    height: 100px;
+}
+.Tools img{
+    width: 100px;
+    height: 100px;
+}
+.wrapper .article-main{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+
+    grid-template-areas:
+    "A A  A  L"
+    "A A  A  L"
+    "B B  B  T"
+    "B B  B  T"
+    "C C  C  C"
+    "D D  D  D";
+}
+#Intro{
+    grid-area: A;
+}
+#banners-card{
+    grid-area: B;
+}
+#News-in-game{
+    grid-area: C;
+}
+#Tools{
+    grid-area: T;
+}
+#Links{
+    grid-area: L;
+}
+#Div{
+    grid-area: D;    
+}
+
+.wrapper .article-main .section-main .teg-style{
+    color: #ffff;
+    font-size: 35px;
+    font-weight: normal;
+    border-bottom: 4px solid #ca98e5;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    font-family: "Calibri", 'Verdana', sans-serif;
+}
+.wrapper .article-main{
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+.wrapper .article-main .section-main p, a{
+    color: #ffff;
+    font-size: 23px;
+}
+.wrapper article section{
+    border-radius: 15px;
+    padding: 25px;
+    background-color: #423745;
+}
+.wrapper article section p{
+    margin: 0;
+    margin-bottom: 25px;
+}
+.section-main a{
+    color: #ffff;
+    font-size: 23px;
+    text-decoration: none;
+}
+.section-main li{
+    background-color: #382f3b;
+    text-decoration: none;
+    color: #ffff;;
+}
+.article-main section ul{
+    padding: 0;
+    margin: 0;
     width: 100%;
+}
+.article-main section li {
+    margin-bottom: 4px;
+    border: 1px;
+    border-radius: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+#News-in-game{
+    text-align: center;
+}
+
+.card_baners img{
+    padding: 12px;
+}
+#game-banners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#charters-in-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#News-in-game img{
+    padding: 0;
+    margin: 0;
+}
+.card_baners ul, li{
+    padding: 0;
+    margin: 0;
+}
+.card_baners-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: stretch;
+}
+.inside-nav-flex .main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+}
+.inside-nav-flex ul li{
+    margin: 10px;
+    padding-left: 15px;
+    font-size: 22px;
+}
+.inside-nav-flex ul li a{
+    text-decoration: none;
+    margin: auto;
 }
 .footer-nav section p{
     text-align: center;
@@ -70,4 +220,123 @@ footer {
     margin: auto;
     padding-top: 20px;
     color: #ffff
+}
+#site-rule p{
+    padding: 0;
+}
+.card_baners .teg-style{
+    max-width: 400px;
+}
+fieldset {
+    border: 0;
+}
+fieldset legend{
+    font-size: 30px;
+}
+.modal{
+    /*opacity: 0;*/
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    pointer-events: none;
+
+}
+.modal:target{
+    /*opacity: 1;*/
+    visibility: visible;
+    pointer-events: auto;
+}
+.box-modal{
+    background-color: #382f3b;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    border: 4px solid #3a3737;
+    position: relative;
+    margin: 0 auto;
+    top: 25%;
+}
+.box-modal .switcher{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:
+    "LOGIN SIGNIN"
+    ;
+}
+.box-modal .switcher{
+    padding-left: 0;
+    border-bottom: 4px solid #ca98e5;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.box-modal .switcher li{
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    width: 210px;
+}
+.switcher-login{
+    grid-area: LOGIN;
+    background-color: #423745;
+    border-radius: 17px;
+}
+.switcher-signin{
+    grid-area: SIGNIN;
+    background-color: #423745;
+    border-radius: 17px;
+}
+.box-modal fieldset legend{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Calibri", 'Verdana', sans-serif;
+    color: #ffff;
+}
+.box-modal fieldset{
+    margin-left: 58px;
+    margin-right: 58px;
+    padding: 0;
+}
+.box-modal form{
+    padding: 20px;
+}
+.box-modal form .input{
+    font-size: 26px;
+    margin-top: 16px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 18px;
+    background-color: #615365;
+    color: #ffff;
+    max-width: 600px;
+
+}
+.box-modal form {
+    display: flex;
+    flex-direction: column;
+}
+.box-modal form input::placeholder{
+    color: rgba(255, 255, 255, 0.25);
+}
+#site-rule{
+    margin-top: auto;
+}
+.close:before {
+    content: 'x';
+    color: #ffff;
+    position: absolute;
+    font-size: 40px;
+    line-height: 1;
+    top: -5px;
+    right: -30px
+}
+footer {
+    width: 100%;
+}
+header{
+    width: 100%;
 }
